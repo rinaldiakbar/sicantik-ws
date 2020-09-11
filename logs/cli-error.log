@@ -1,0 +1,110 @@
+2019-06-13 10:10:37 Warning: Warning (512): /var/www/html/sicantik-ws/tmp/cache/models/ is not writable in [/var/www/html/sicantik-ws/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 437]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 437
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 105
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 90
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 96
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 170
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 228
+Cake\Shell\CacheShell::clear() - CORE/src/Shell/CacheShell.php, line 77
+Cake\Shell\CacheShell::clearAll() - CORE/src/Shell/CacheShell.php, line 102
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 493
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 230
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 33
+
+
+
+2019-06-24 23:28:56 Warning: Warning (512): /var/www/html/sicantik-ws/tmp/cache/models/ is not writable in [/var/www/html/sicantik-ws/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 439
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 105
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 90
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 97
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 172
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 232
+Cake\Shell\CacheShell::clear() - CORE/src/Shell/CacheShell.php, line 77
+Cake\Shell\CacheShell::clearAll() - CORE/src/Shell/CacheShell.php, line 102
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 230
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 33
+
+
+
+2019-09-23 22:06:23 Warning: Warning (512): /var/www/html/sicantik-ws/tmp/cache/models/ is not writable in [/var/www/html/sicantik-ws/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 439
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 105
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 90
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 97
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 172
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 232
+Cake\Shell\CacheShell::clear() - CORE/src/Shell/CacheShell.php, line 77
+Cake\Shell\CacheShell::clearAll() - CORE/src/Shell/CacheShell.php, line 102
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2019-10-17 17:39:48 Warning: Warning (512): /var/www/html/sicantik-ws/tmp/cache/models/ is not writable in [/var/www/html/sicantik-ws/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 439
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 105
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 90
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 97
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 172
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 232
+Cake\Shell\CacheShell::clear() - CORE/src/Shell/CacheShell.php, line 77
+Cake\Shell\CacheShell::clearAll() - CORE/src/Shell/CacheShell.php, line 102
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2019-10-31 01:18:35 Warning: Warning (512): /var/www/html/sicantik-ws/tmp/cache/models/ is not writable in [/var/www/html/sicantik-ws/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 439
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 105
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 90
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 97
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 172
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 232
+Cake\Shell\CacheShell::clear() - CORE/src/Shell/CacheShell.php, line 77
+Cake\Shell\CacheShell::clearAll() - CORE/src/Shell/CacheShell.php, line 102
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2019-10-31 01:21:57 Warning: Warning (512): /var/www/html/sicantik-ws/tmp/cache/models/ is not writable in [/var/www/html/sicantik-ws/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 439
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 105
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 90
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 97
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 172
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 232
+Cake\Shell\CacheShell::clear() - CORE/src/Shell/CacheShell.php, line 77
+Cake\Shell\CacheShell::clearAll() - CORE/src/Shell/CacheShell.php, line 102
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+

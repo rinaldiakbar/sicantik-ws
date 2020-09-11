@@ -1,0 +1,8 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - REST:
+                    url: http://sic-api.local/api
+                    depends: PhpBrowser
+                    part: Json

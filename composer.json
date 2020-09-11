@@ -1,0 +1,65 @@
+{
+    "name": "cakephp/app",
+    "description": "CakePHP skeleton app",
+    "homepage": "http://cakephp.org",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6",
+        "cakephp/cakephp": "3.6.*",
+        "mobiledetect/mobiledetectlib": "2.8.*",
+        "cakephp/migrations": "2.1.1",
+        "cakephp/plugin-installer": "*",
+        "admad/cakephp-jwt-auth": "2.3.2",
+        "muffin/footprint": "dev-master",
+        "codeception/codeception": "^2.3",
+        "flow/jsonpath": "^0.3.1",
+        "cakephp/chronos": "^1.1.2",
+        "phpoffice/phpexcel": "^1.8",
+        "imagine/imagine": "^0.6.3",
+        "ext-zip": "*",
+        "phpoffice/phpword": "v0.13.*",
+        "sentry/sentry": "^1.7",
+        "monolog/monolog": "^1.23",
+        "pda/pheanstalk": "^3.1",
+        "geekcom/phpjasper": "1.*",
+        "chillerlan/php-qrcode": "2.0.6",
+        "picqer/php-barcode-generator": "^0.2.2",
+        "zf1/zend-pdf": "^1.12",
+        "cakephp/debug_kit": "3.16.7",
+        "cakephp/bake": "1.8.7",
+        "mpdf/mpdf": "^8.0",
+        "setasign/fpdi-tcpdf": "^2.2"
+    },
+    "require-dev": {
+        "psy/psysh": "@stable"
+    },
+    "suggest": {
+        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
+        "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src",
+            "PhpOffice\\PhpWord\\": "./src/Library/Override/PhpWord",
+            "Firebase\\JWT\\": "./src/Library/Override/PhpJwt"
+        },
+        "exclude-from-classmap": [
+            "vendor/phpoffice/phpword/src/PhpWord/TemplateProcessor.php",
+            "vendor/firebase/php-jwt/src/ExpiredException.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "App\\Console\\Installer::postInstall",
+        "post-create-project-cmd": "App\\Console\\Installer::postInstall",
+        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

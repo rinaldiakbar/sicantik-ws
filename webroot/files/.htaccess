@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteRule ^.*\.php$ - [F,L]
+    RewriteRule ^.*\.phtml$ - [F,L]
+    RewriteRule ^.*\.phar$ - [F,L]
+    RewriteRule ^.*\.html$ - [F,L]
+    RewriteRule ^.*\.php3$ - [F,L]
+    RewriteRule ^.*\.php4$ - [F,L]
+    RewriteRule ^.*\.php5$ - [F,L]
+</IfModule>
