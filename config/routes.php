@@ -118,6 +118,7 @@ Router::prefix('api', function (RouteBuilder $routes) {
     ]);
 
     $routes->resources('Caduan', ['path' => 'caduan']);
+    // TODO change route with verb naming
     $routes->resources('Caduan', [
         'map' => [
             'edit' => ['action' => 'edit', 'method' => 'POST'],
@@ -133,6 +134,15 @@ Router::prefix('api', function (RouteBuilder $routes) {
             'inovasiList' => ['action' => 'inovasiList', 'method' => 'GET'],
             'inovasiListProsesPengembangan' => ['action' => 'inovasiListProsesPengembangan', 'method' => 'GET'],
             'penangananAduanList' => ['action' => 'penangananAduanList', 'method' => 'GET']
+        ]
+    ]);
+
+    $routes->resources('FormAssessment', ['path' => 'formassessment']);
+    $routes->resources('FormAssessment', [
+        'map' => [
+            'edit' => ['action' => 'edit', 'method' => 'POST'],
+            'getAduanList' => ['action' => 'getAduanList', 'method' => 'GET'],
+            'getKategoriList' => ['action' => 'getKategoriList', 'method' => 'GET'],
         ]
     ]);
 
@@ -189,6 +199,7 @@ Router::prefix('api', function (RouteBuilder $routes) {
             'deletedatakolom' => ['action' => 'deleteDataKolom', 'method' => 'DELETE'],
             'tipekolomlist' => ['action' => 'getTipeKolomList', 'method' => 'GET'],
             'records' => ['action' => 'getRecords', 'method' => 'GET'],
+            'datakolom' => ['action' => 'getDataKolom', 'method' => 'GET'],
         ]
     ]);
 
@@ -265,7 +276,9 @@ Router::prefix('api', function (RouteBuilder $routes) {
             'getpermohonantosign' => ['action' => 'getPermohonanToSign', 'method' => 'GET'],
             'uploadsignature' => ['action' => 'uploadSignature', 'method' => 'POST'],
             'permohonantocertify' => ['action' => 'getPermohonanToCertify', 'method' => 'GET'],
-            'listNib' => ['action' => 'listNib', 'method' => 'GET']
+            'listNib' => ['action' => 'listNib', 'method' => 'GET'],
+            'notifSyarat' => ['action' => 'notifSyarat', 'method' => 'POST'],
+            'permohonanditolak' => ['action' => 'permohonanDitolak', 'method' => 'GET'],
         ]
     ]);
 
@@ -276,13 +289,12 @@ Router::prefix('api', function (RouteBuilder $routes) {
             'tipekeluaranlist' => ['action' => 'getTipeKeluaranList', 'method' => 'GET'],
             'keluaran' => ['action' => 'keluaran', 'method' => 'GET'],
             'testquery' => ['action' => 'testQuery', 'method' => 'GET'],
-            'testgetpdfsign' => ['action' => 'testGetPdfSign', 'methdo' => 'GET'],
             'generatereport' => ['action' => 'generateReport', 'method' => 'GET'],
             'generatereporttosign' => ['action' => 'generateReportToSign', 'method' => 'GET'],
             'copy' => ['action' => 'copy', 'method' => 'PUT']
         ]
     ]);
-    
+
     $routes->resources('KelompokData', [
         'map' => [
             'jenissumberlist' => ['action' => 'getJenisSumberList', 'method' => 'GET'],
@@ -370,7 +382,7 @@ Router::prefix('api', function (RouteBuilder $routes) {
         'map' => [
             'downloadlampiran' => ['action' => 'downloadLampiran', 'method' => 'GET'],
             'notifikasi' => ['action' => 'getNotifikasi', 'method' => 'GET'],
-            'insertPesanDibaca' => ['action' => 'insertPesanDibaca', 'method' => 'GET'],
+            'read' => ['action' => 'insertPesanDibaca', 'method' => 'POST'],
             'upload' => ['action' => 'upload', 'method' => 'POST']
         ]
     ]);
@@ -403,7 +415,7 @@ Router::prefix('api', function (RouteBuilder $routes) {
         'ProsesPermohonan', [
             'map' => [
                 'uploadsignedreport' => ['action' => 'uploadSignReport', 'method' => 'POST'],
-                'downloadsignedreport' => ['action' => 'downoloadSignReport', 'method' => 'GET'],
+                'downloadsignedreport' => ['action' => 'downloadSignedReport', 'method' => 'GET'],
                 'signreport' => ['action' => 'signReport', 'method' => 'POST']
             ]
         ]
@@ -445,6 +457,18 @@ Router::prefix('api', function (RouteBuilder $routes) {
     $routes->resources('FaqCategory', [
         'map' => [
             'list' => ['action' => 'getList', 'method' => 'GET']
+        ]
+    ]);
+
+    $routes->resources('Maps', [
+        'map' => [
+            'sicantik' => ['action' => 'sicantik', 'method' => 'GET'],
+            'layers' => [
+                'action' => 'getLayers', 'method' => 'GET'
+            ],
+            'center' => [
+                'action' => 'getCenter', 'method' => 'GET'
+            ]
         ]
     ]);
 });
@@ -510,6 +534,15 @@ Router::prefix('rest', function (RouteBuilder $routes) {
             'map' => [
                 'save' => ['action' => 'saveData', 'method' => 'POST'],
                 'post' => ['action' => 'postData', 'method' => 'POST']
+            ]
+        ]
+    );
+
+    $routes->resources(
+        'OssLogin', [
+            'map' => [
+                'getssotoken' => ['action' => 'getSsoToken', 'method' => 'POST'],
+                'getusername' => ['action' => 'getUsername', 'method' => 'GET']
             ]
         ]
     );
