@@ -46,6 +46,7 @@ class DynamicFormService extends AuthService
     const TIPE_ELEMENT_HYPERLINK = 'hyperlink';
     const TIPE_ELEMENT_QRCODE = 'qrcode';
     const TIPE_ELEMENT_BARCODE = 'barcode';
+	const TIPE_ELEMENT_EDITOR = 'editor';
 
     const TIPE_SAVE_INTERNAL = 'internal';
     const TIPE_SAVE_EKSTERNAL = 'eksternal';
